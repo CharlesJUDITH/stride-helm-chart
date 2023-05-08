@@ -1,2 +1,2 @@
-# stride-helm-chart
-Helm chart to install Stride blockchain
+# stride-helm-charts
+Stride Helm charts
