@@ -80,7 +80,7 @@ else
   fi
 fi
 else
-  echo "Found Chihuahua data folder!"
+  echo "Found Stride data folder!"
   cd "$STRIDE_HOME/data" || exit
 fi
 

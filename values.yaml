@@ -207,7 +207,7 @@ state_sync:
   rpc1: "https://stride-rpc.polkachu.com:443"
   rpc2: "https://stride-rpc.polkachu.com:443"
   node_id: ""
-  # height_offset should equal the CHIHUAHUA_STATE_SYNC_SNAPSHOT_INTERVAL on the node which makes the state-sync snapshots
+  # height_offset should equal the STRIDE_STATE_SYNC_SNAPSHOT_INTERVAL on the node which makes the state-sync snapshots
   height_offset: 2000
 
 snapshots:
@@ -217,7 +217,7 @@ microk8s:
   enabled: true
   hostpath: /data/stride
 
-# Used for mounting CHIHUAHUA_HOME on a specific node
+# Used for mounting STRIDE_HOME on a specific node
 local_storage:
   enabled: false
   capacity: 100Gi
