@@ -40,7 +40,7 @@ mkdir -p $STRIDE_HOME/data
 # fi
 
 cd "$STRIDE_HOME/data" || exit
-curl -s "$STRIDE_NET/genesis.json" > "$STRIDE_HOME/config/genesis.json"
+curl -s "$STRIDE_NET" > "$STRIDE_HOME/config/genesis.json"
 if [ "$STRIDE_STATESYNC_ENABLE" == true ]; then
   echo "state-sync is enabled, figure the right trust height & derive its hash"
 
