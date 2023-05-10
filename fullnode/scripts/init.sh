@@ -18,7 +18,7 @@ if [ ! -d "$STRIDE_HOME/data" ]
 then
 mkdir -p $STRIDE_HOME/data
 # Init the chain
-/usr/bin/strided init --chain-id "$STRIDE_CHAIN_ID" "$STRIDE_MONIKER"
+/bin/strided init --chain-id "$STRIDE_CHAIN_ID" "$STRIDE_MONIKER"
 
 # If the node is a validator, do tx to create the validator
 # Make sure the Validator has fully synced before running 
