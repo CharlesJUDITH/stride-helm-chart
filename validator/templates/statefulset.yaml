@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: stride-node
+  name: stride-node-validator
   namespace: {{ .Release.Namespace }}
   labels:
   {{- if .Values.validator.enabled }}

@@ -1,0 +1,21 @@
+{{- if .Values.fullnode.enabled -}}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stride-fullnode
+  namespace: {{ .Release.Namespace }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: 1317
+      name: strided-api
+    - port: 9090
+      name: strided-grpc
+    - port: 26656
+      name: strided-p2p
+    - port: 26657
+      name: strided-rpc
+  selector:
+    stride.network/fullnode: "{{ .Values.stride_node.moniker }}"
+{{- end }}
