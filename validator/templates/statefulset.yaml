@@ -102,10 +102,10 @@ spec:
               mountPath: /config
               readOnly: true
             - name: config-toml
-              mountPath: /root/.strided/config/config.toml
+              mountPath: /root/.stride/config/config.toml
               subPath: config.toml
             - name: app-toml
-              mountPath: /root/.strided/config/app.toml
+              mountPath: /root/.stride/config/app.toml
               subPath: app.toml
           {{- if .Values.local_storage.enabled }}
             - name: local-persistent-storage
@@ -116,9 +116,9 @@ spec:
           {{- end }}
           {{- if .Values.validator.enabled }}
             - name: node-key
-              mountPath: /root/.strided/config/node_key.json
+              mountPath: /root/.stride/config/node_key.json
             - name: priv-validator-key
-              mountPath: /root/.strided/config/priv_validator_key.json
+              mountPath: /root/.stride/config/priv_validator_key.json
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
@@ -216,10 +216,10 @@ spec:
               mountPath: /config
               readOnly: true
             - name: config-toml
-              mountPath: /root/.strided/config/config.toml
+              mountPath: /root/.stride/config/config.toml
               subPath: config.toml
             - name: app-toml
-              mountPath: /root/.strided/config/app.toml
+              mountPath: /root/.stride/config/app.toml
               subPath: app.toml
           {{- if .Values.local_storage.enabled }}
             - name: local-persistent-storage
