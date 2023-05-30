@@ -4,7 +4,7 @@
 
 image:
   repository: "ghcr.io/akash-network/cosmos-omnibus"
-  tag: "v0.3.29-stride-v9.0.0"
+  tag: "v0.3.32-stride-v9.0.1"
   pullPolicy: IfNotPresent
 
 # Common Values
